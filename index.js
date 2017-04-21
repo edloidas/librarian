@@ -10,7 +10,7 @@ const controller = botkit.slackbot({
 const slackBot = controller.spawn({ token });
 
 controller.hears([/^hello robot$/i], ['direct_message'], (bot, message) => {
-  bot.reply(message, 'Hello Human!');
+  bot.reply(message, 'Hello Team!');
 });
 
 slackBot.startRTM();
