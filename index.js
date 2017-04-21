@@ -1,22 +1,22 @@
 const botkit = require('botkit');
-const { token, port } = require('./src/config');
+const { token, port, settings } = require('./src/config');
+const message = require('./src/message');
 
-const controller = botkit.slackbot({
-  debug: false,
-  send_via_rtm: true,
-  json_file_store: './db',
-});
+const controller = botkit.slackbot(settings);
 
 const slackBot = controller.spawn({ token });
 
-controller.hears([/^hello robot$/i], ['direct_message'], (bot, message) => {
-  bot.reply(message, 'Hello Human!');
+// Bind recieved message handler
+controller.hears(message.ping.regexp, message.ping.type, (bot, msg) => {
+  bot.reply(msg, message.ping.reply);
 });
 
-controller.hears([/^hi$/i], ['direct_message'], (bot, message) => {
-  bot.reply(message, 'Yo!');
-});
-
+// Start bot in Real-Time Messaging mode
 slackBot.startRTM();
 
+/*
+HACK
+Heroku needs an active connection on port.
+Otherwise, running app wil be shutted down.
+*/
 controller.setupWebserver(port, () => {});
