@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "block-spacing": [ 2, "always" ],
+    "space-before-function-paren": [ 2, { "anonymous": "always", "named": "never" } ],
+    "spaced-comment": [ 2, "always", { "exceptions": [ "-", "+" ] } ],
+    "arrow-spacing": [ 2, { "before": true, "after": true } ],
+    "no-restricted-syntax": [ "off" ],
+    "object-property-newline": [ "off", { "allowMultiplePropertiesPerLine": true } ]
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  }
+}

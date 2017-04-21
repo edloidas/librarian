@@ -1,0 +1,54 @@
+{
+  "name": "librarian",
+  "version": "0.0.1",
+  "description": "Slack bot.",
+  "main": "index.js",
+  "keywords": [
+    "slack",
+    "bot"
+  ],
+  "homepage": "https://github.com/edloidas/librarian#readme",
+  "bugs": {
+    "url": "https://github.com/edloidas/librarian/issues"
+  },
+  "license": "MIT",
+  "author": "Taukachou Mikita <edloidas@gmail.com> (https://edloidas.com)",
+  "contributors": [
+    {
+      "name": "Alex Shklianko",
+      "email": "asl@enonic.com",
+      "url": "https://github.com/ashklianko"
+    }
+  ],
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edloidas/librarian.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "cover": "jest --coverage",
+    "report": "node_modules/.bin/jest --coverage && cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
+    "prepush": "npm test",
+    "fix": "eslint --fix . || true"
+  },
+  "dependencies": {
+    "botkit": "^0.5.2"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.14",
+    "eslint": "^3.7.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.0.0",
+    "husky": "^0.13.3",
+    "istanbul": "^0.4.5",
+    "jest": "^19.0.2"
+  },
+  "engines": {
+    "node": ">= 6.5.0",
+    "npm": ">= 3.10.7"
+  }
+}
