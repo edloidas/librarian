@@ -8,8 +8,8 @@ const handler = (request) => {
   const date = moment();
   const until = date.toISOString();
   const since = date.subtract(1, 'days').toISOString();
-  return getCommits(owner, repo, since, until).then(data => JSON.stringify(data));
-  // return Promise.resolve(`Owner: ${owner} / Repo: ${repo}`);
+  return Promise.resolve(`Owner: ${owner} / Repo: ${repo}`);
+  // return getCommits(owner, repo, since, until).then(resp => resp ? 'Some commits :)' : 'No commits :(');
 };
 
 module.exports = { regexp, type, handler };

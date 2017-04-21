@@ -7,7 +7,7 @@ const config = {
     protocol: 'https',
     host: 'api.github.com',
     Promise: bluebird,
-    timeout: 5000,
+    timeout: 10000,
   },
   settings: {
     debug: false,
