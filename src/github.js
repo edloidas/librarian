@@ -7,6 +7,10 @@ const fetcher = new GitHubApi(config.github);
 const getFollowingForUser = username => pify(fetcher.users.getFollowingForUser)({ username })
   .then(data => JSON.stringify(data));
 
+const getTop = username => pify(fetcher.users.getFollowingForUser)({ username })
+  .then(data => JSON.stringify(data));
+
 module.exports = {
   getFollowingForUser,
+  getTop,
 };

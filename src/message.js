@@ -8,4 +8,8 @@ module.exports = {
     regexp: [/^ghUsers/i],
     type: ['direct_message'],
   },
+  top: {
+    regexp: [/^top/i],
+    type: ['direct_message'],
+  },
 };
