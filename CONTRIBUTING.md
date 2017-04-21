@@ -1,6 +1,6 @@
-# Contributing to librarian #
+# Contributing to librarian-bot #
 
-♥ [librarian](https://github.com/edloidas/librarian) and want to get involved?
+♥ [librarian-bot](https://github.com/edloidas/librarian-bot) and want to get involved?
 Thanks! There are plenty of ways you can help!
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
@@ -9,7 +9,7 @@ Following these guidelines helps to communicate that you respect the time of the
 
 ## Using the issue tracker ##
 
-The [issue tracker](https://github.com/edloidas/librarian/issues) is the preferred channel for [bug reports](#bugs), [features requests](#features) and [submitting pull requests](#pull-requests), but please respect the following restrictions:
+The [issue tracker](https://github.com/edloidas/librarian-bot/issues) is the preferred channel for [bug reports](#bugs), [features requests](#features) and [submitting pull requests](#pull-requests), but please respect the following restrictions:
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and respect the opinions of others.
 
@@ -67,11 +67,11 @@ Adhering to the following this process is the best way to get your work included
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/librarian.git librarian
+   git clone https://github.com/<your-username>/librarian-bot.git librarian-bot
    # Navigate to the newly cloned directory
-   cd librarian
+   cd librarian-bot
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/edloidas/librarian.git
+   git remote add upstream https://github.com/edloidas/librarian-bot.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:

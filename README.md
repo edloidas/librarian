@@ -1,4 +1,4 @@
-librarian
+librarian-bot
 ==
 
 [![Travis Build Status][travis-image]][travis-url]
@@ -31,17 +31,17 @@ Deployed on [Heroku](https://heroku.com).
 [MIT](LICENSE) © [Taukachou Mikita](https://edloidas.com)
 
 <!-- Links -->
-[travis-url]: https://travis-ci.org/edloidas/librarian
-[travis-image]: https://img.shields.io/travis/edloidas/librarian.svg?label=linux%20build
+[travis-url]: https://travis-ci.org/edloidas/librarian-bot
+[travis-image]: https://img.shields.io/travis/edloidas/librarian-bot.svg?label=linux%20build
 
-[appveyor-url]: https://ci.appveyor.com/project/edloidas/librarian
-[appveyor-image]: https://img.shields.io/appveyor/ci/edloidas/librarian.svg?label=windows%20build
+[appveyor-url]: https://ci.appveyor.com/project/edloidas/librarian-bot
+[appveyor-image]: https://img.shields.io/appveyor/ci/edloidas/librarian-bot.svg?label=windows%20build
 
-[coveralls-url]: https://coveralls.io/github/edloidas/librarian?branch=master
-[coveralls-image]: https://coveralls.io/repos/github/edloidas/librarian/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/edloidas/librarian-bot?branch=master
+[coveralls-image]: https://coveralls.io/repos/github/edloidas/librarian-bot/badge.svg?branch=master
 
-[dep-url]: https://david-dm.org/edloidas/librarian
-[dep-image]: https://david-dm.org/edloidas/librarian.svg
+[dep-url]: https://david-dm.org/edloidas/librarian-bot
+[dep-image]: https://david-dm.org/edloidas/librarian-bot.svg
 
-[devdep-url]: https://david-dm.org/edloidas/librarian#info=devDependencies
-[devdep-image]: https://david-dm.org/edloidas/librarian/dev-status.svg
+[devdep-url]: https://david-dm.org/edloidas/librarian-bot#info=devDependencies
+[devdep-image]: https://david-dm.org/edloidas/librarian-bot/dev-status.svg
