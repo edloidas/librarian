@@ -4,13 +4,8 @@ const config = require('./config');
 
 const fetcher = new GitHubApi(config.github);
 
-const getFollowingForUser = username => pify(fetcher.users.getFollowingForUser)({ username })
-  .then(data => JSON.stringify(data));
-
-const getTop = username => pify(fetcher.users.getFollowingForUser)({ username })
-  .then(data => JSON.stringify(data));
+const getCommits = (owner, repo) => pify(fetcher.repos.getCommits)({ owner, repo });
 
 module.exports = {
-  getFollowingForUser,
-  getTop,
+  getCommits,
 };
