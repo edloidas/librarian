@@ -1,5 +1,5 @@
 const botkit = require('botkit');
-const { token } = require('./src/config');
+const { token, port } = require('./src/config');
 
 const controller = botkit.slackbot({
   debug: false,
@@ -10,7 +10,13 @@ const controller = botkit.slackbot({
 const slackBot = controller.spawn({ token });
 
 controller.hears([/^hello robot$/i], ['direct_message'], (bot, message) => {
-  bot.reply(message, 'Hello Team!');
+  bot.reply(message, 'Hello Human!');
+});
+
+controller.hears([/^hi$/i], ['direct_message'], (bot, message) => {
+  bot.reply(message, 'Yo!');
 });
 
 slackBot.startRTM();
+
+controller.setupWebserver(port, () => {});
