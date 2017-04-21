@@ -4,7 +4,7 @@ const config = require('./config');
 
 const fetcher = new GitHubApi(config.github);
 
-const getCommits = (owner, repo) => pify(fetcher.repos.getCommits)({ owner, repo });
+const getCommits = (owner, repo, since, until) => pify(fetcher.repos.getCommits)({ owner, repo, since, until });
 
 module.exports = {
   getCommits,

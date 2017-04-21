@@ -39,6 +39,7 @@
     "bluebird": "^3.5.0",
     "botkit": "^0.5.2",
     "github": "^9.2.0",
+    "moment": "^2.18.1",
     "pify": "^2.3.0"
   },
   "devDependencies": {
