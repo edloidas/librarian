@@ -4,4 +4,8 @@ module.exports = {
     type: ['direct_message'],
     reply: 'pong',
   },
+  ghUsers: {
+    regexp: [/^ghUsers/i],
+    type: ['direct_message'],
+  },
 };
